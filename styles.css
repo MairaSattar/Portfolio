@@ -540,6 +540,11 @@ main.about a:active {
         flex-direction: column;
     }
 
+	.project-box {
+		transform: scaleX(1);
+  		transition: transform 0.6s cubic-bezier(.4,0,.2,1);
+	}
+
     .project-box.expanded {
         width: 100%;                    
         max-width: 300px;
@@ -548,6 +553,7 @@ main.about a:active {
         grid-template-rows: auto auto;  
         align-items: start;
         padding: 20px;
+		transform: scaleX(2.3);
     }
 
     .project-box.expanded .img-link {
