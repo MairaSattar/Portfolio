@@ -241,7 +241,7 @@ main.about a:active {
   	border-radius: 15px;
   	position: relative;
   	overflow: hidden;
-  	transition: width 0.6s ease;
+  	transition: transform 0.4s ease, opacity 0.4s ease;
   	display: grid;
   	grid-template-columns: 1fr;  
   	justify-items: center;
@@ -265,7 +265,6 @@ main.about a:active {
   	display: block;
   	border-radius: 10px;
   	cursor: pointer;
-
 }
 
 .project-title {
@@ -313,16 +312,15 @@ main.about a:active {
 }
 	
 .project-box i {
-  	position: absolute;
+	position: absolute;
  	top: 15px;
   	right: 15px;
  	font-size: 20px;
  	color: #fff;
-   cursor: pointer;
+  	cursor: pointer;
  	opacity: 0;
-   transition: width 0.5s ease, height 0.5s ease;
-   z-index: 6;
-   cursor: pointer;
+    z-index: 6;
+    cursor: pointer;
 }
 
 /* expanded project box  */
@@ -540,11 +538,6 @@ main.about a:active {
         flex-direction: column;
     }
 
-	.project-box {
-		transform: scaleX(1);
-  		transition: transform 0.6s cubic-bezier(.4,0,.2,1);
-	}
-
     .project-box.expanded {
         width: 100%;                    
         max-width: 300px;
@@ -553,7 +546,6 @@ main.about a:active {
         grid-template-rows: auto auto;  
         align-items: start;
         padding: 20px;
-		transform: scaleX(2.3);
     }
 
     .project-box.expanded .img-link {
