@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Showcasing the portfolio of Maira Sattar, featuring her recent works, cv, and socials">
+    <title>Maira Sattar | Portfolio </title>
+
+    <!-- Font Awesome link (for icons) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+    <!-- Google Fonts -->
+
+        <!-- Montserrat -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!-- Michroma -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-link" data-section="about">
+                <a id="about-normal" href="#about">about</a>
+                <a href="#about"><i id="about-icon" class="fa-solid fa-user"></i></a>
+                <div class="switch"></div>
+            </div>
+
+            <div class="nav-link" data-section="projects">
+                <a id="projects-normal" href="#projects">projects</a>
+                <a id="projects-device" href="#projects">works</a>
+                <a href="#projects"><i id="projects-icon" class="fa-solid fa-code"></i></a>
+                <div class="switch"></div>
+            </div>
+
+            <div class="nav-link" data-section="cv">
+                <a id="cv-normal" href="#cv">my cv</a>
+                <a href="#cv"><i id="cv-icon" class="fa-solid fa-file"></i></a>
+                <div class="switch"></div>
+            </div>
+
+            <div class="nav-link" data-section="contact">
+                <a id="contacts-normal" href="#contact">social</a>
+                <a href="#contact"><i id="contacts-icon" class="fa-solid fa-envelope"></i></a>
+                <div class="switch"></div>
+            </div>
+        </nav>
+    </header>
+
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+            <div class="about-content" id="abt-content">
+                <h1>Maira sattar</h1>
+                <p>Hi, I'm Maira Sattar - an aspiring web developer with a passion for coding, development, and design. I'm currently preparing to study Computing Science at university next year, and I'm using this time to 	build my skills, explore new technologies, and create real-world projects.<br><br>
+                Although I'm just starting out, I'm currently learning the basics of web development and looking forward to exploring frameworks like React and Bootstrap to build more dynamic and responsive websites.<br><br>
+                This portfolio is a reflection of my current journey,  showcasing what I've built so far, what I'm learning now, and where l'm headed next. I'm excited to keep growing and take on new challenges in the world of tech. </p>
+                <button onclick="window.location.href='https://github.com/MairaSattar'" class="cta-btn">Explore Github <i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+        </section>
+
+
+
+        <!-- SKILLS -->
+        <section class="skills-section" id="skills">
+            <div class="skill-box">
+                <i class="fa-brands fa-html5"></i>
+            </div>
+            <div class="skill-box">
+                <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <div class="skill-box">
+                <i class="fa-brands fa-js"></i>
+            </div>
+        </section>
+
+
+
+        <!-- PROJECTS -->
+        <section class="projects-section" id="projects">
+            <h2>MY RECENT PROJECTS</h2>
+            <div class="container">
+                
+                <div id="weather-app" class="project-box">
+                    <p><a href="https://mairasattar.github.io/Weather-App/" class="web-link">WEATHER APP</a><br>Built with Visual Studio Code, this app uses the OpenWeatherMap API to provide real-time weather information. Users can view temperature, humidity, “feels like” temperature, rain measurements, wind speed, and hourly weather forecasts for any location. The intuitive interface makes checking the weather quick and easy. <a href="https://github.com/MairaSattar/Weather-App.git" target="_blank" class="code-link">View Code</a></p>
+                </div>
+
+                <div id="calc-app" class="project-box">
+                      <p><a href="https://mairasattar.github.io/Calculator/" class="web-link">CALCULATOR APP</a><br>A simple calculator web application built with HTML, CSS and JavaScript. Designed and developed in Visual Studio Code, it performs basic arithmetic operations with a clean, responsive interface. <a href="https://github.com/MairaSattar/Calculator.git" target="_blank" class="code-link">View Code</a></p>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- CV -->
+        <section class="cv-section" id="cv">
+            <div class="cv-content">
+                <h2>download my cv</h2>
+                <p>Here you will find my cv, highlighting my skills, experience, and projects. It offers a closer look at my background and the work I am passionate about.</p>
+                <a href="Maira-Sattar-CV.pdf" download="Maira-Sattar-CV.pdf"><button class="cta-btn">Download my cv <i class="fa-solid fa-arrow-right-long"></i></button></a>
+        </div>
+        </section>
+
+
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <h2>WANT TO CONTACT ME?</h2>
+			<div class="contact-container" id="contact-contain">
+                <div class="email contactDiv">
+                    <h3>Email</h3>
+                    <a href="mailto:mairasattar08@gmail.com" class="fa-solid fa-envelope"></a>
+                </div>
+                <div class="linkedIn contactDiv">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/maira-sattar-51711a384?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="fa-brands fa-linkedin"></a>
+			    </div>
+            </div>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
