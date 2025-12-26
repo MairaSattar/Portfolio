@@ -521,7 +521,7 @@ header .fa-solid {
   position: relative;
   width: 240px;
   height: 60px;
-  background-color: #ffffff;
+  background-color: red;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
